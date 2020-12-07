@@ -9,11 +9,11 @@ html(lang="en")
     body
         header
             div.auto-layout
-                .wrapper
+                div.wrapper
                     div.menu
                         div.menu__logo
                             a(href="#")
-                                img(src="img/menu__logo.png" alt="logo" titile="nice logo of company")
+                                img(src="img/menu__logo.png" alt="logo")
                         nav
                             ul.menu__box
                                 li.menu__box__item
@@ -30,41 +30,49 @@ html(lang="en")
                         h1.headline-text__h1 Lightning fast prototyping
                         div.headline-text__under Most calendars are designed for teams. Slate is designed for freelancers.
                         div.headline-text__button-box
-                            button.headline-text__button-1(type="button") Get Started
-                            button.headline-text__button-2(type="button") Try For Free
-                    
-                    //- img.backround-img-1(src="img/vector-picture-blue.svg", alt="background picture")
-
-                    //- img.backround-img-2(src="img/vector-picture-yellow.svg", alt="background picture")
+                            button.headline-text__button-1(type="button" alt="Button get started") Get Started
+                            button.headline-text__button-2(type="button" alt="button try for free") Try For Free
                     
                     div.browser
-                        img.browser__item-1(src="img/browser-navigation.jpg", alt="browser serch pnel" titile="browser serch pnel")
-                        img.browser__item-2(src="img/browser-body.jpg", alt="browser body" titile="browser body")
+                        img.browser__item-1(src="img/browser-navigation.jpg", alt="browser serch pnel")
+                        img.browser__item-2(src="img/browser-body.jpg", alt="browser body")
 
         main
-            section.first-slide-layout
-                ul.first-slide__text-block
-                    li.first-slide__item-1 Just type
-                    li.first-slide__item-2 Fastest way to navigate
-                    li.first-slide__item-3 Most calendars are designed for teams. Slate is designed for freelancers.
-                    li.first-slide__button-box
-                        button.first-slide-layout__button-1(src="#" type="button" alt="download button" title="") Download
-                        button.first-slide-layout__button-2(src="#" type="button" alt="button see walktrouth" titile="") See Walkthrough
+            section
+                div.first-slide
+                    ul.first-slide__text-block
+                        li.first-slide__item-1 Just type
+                        li.first-slide__item-2 Fastest way to navigate
+                        li.first-slide__item-3 Most calendars are designed for teams. Slate is designed for freelancers.
+                        li.first-slide__button-box
+                            button.first-slide__button-1(src="#" type="button" alt="download button") Download
+                            button.first-slide__button-2(src="#" type="button" alt="button see walktrouth") See Walkthrough
 
-            section.second-slide-layout
-                ul.second-slide-layout__text-block
-                    li.second-slide-layout__text-block__item-1 OpenType features 
-                    li.second-slide-layout__text-block__item-2 Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
-                    li.second-slide-layout__text-block__item-3 
-                        a(href="#" alt="") learn more
-                
-                img.second-slide-layout__img(src="img/second-slide-img.svg" alt="")
-
-                img.second-slide-layout__background(src="img/second-slide-Vector-BG.svg" alt="")
-                    
+            section
+                div.second-slide
+                    div.wrapper
+                        div.second-slide__container
+                            ul.second-slide__text-block
+                                li.second-slide__text-block__item-1 OpenType features 
+                                li.second-slide__text-block__item-2 Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
+                                li.second-slide__text-block__item-3 
+                                    a(href="#" alt="link learn more") learn more
+                            
+                            div.second-slide__img                    
+                                img(src="img/second-slide-img.svg" alt="")                    
 
             section
                 div.third-slide
+                    div.wrapper
+                        div.third-slide__container
+                            div.third-slide__img
+                                img(src="img/third-slide-img.svg" alt="")
+
+                            ul.third-slide__text-block
+                                li.third-slide__text-block__item-1 Variable fonts
+                                li.third-slide__text-block__item-2 Most calendars are designed for teams. Slate is designed for freelancers 
+                                li.third-slide__text-block__item-3
+                                    a(href="#" alt="link learn more") learn more
 
             section    
                 div.quad-slide
